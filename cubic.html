@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta charset="utf-8" />
+    <title>Rubik's Cube by tigerlihao</title>
+    <script type="text/javascript" src="cubic.js"></script>
+    <style type="text/css">
+      body{padding:0;margin:0;font-family:Arial,Helvetica,sans-serif;background:url(bg.png) repeat-x;background-color:#555;}
+	  #main{margin:0 auto;width:800px;padding:0;}
+	  #main h1{display:block;margin:0;padding:0;height:50px;font-size:32px;line-height:50px;color:#999;}
+	  #main h1 span{color:#777;font-size:16px;}
+	  #tips{margin:0;padding:0 0 0 20px;background-color:#444;color:#999;height:30px;line-height:30px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;}
+	  #tips button{display:block;margin:0;padding:0;background-color:#333;color:#999;border:none;height:30px;width:120px;line-height:30px;font-size:16px;float:right;border-top-left-radius:15px;border-bottom-right-radius:15px;}
+      #canvas {cursor:pointer;display:block;position:relative;width:800px;height:500px;margin:0;border-top-left-radius:15px;border-top-right-radius:15px;}
+	  a{text-decoration:none;color:#777;}
+	  a:hover{color:#999;}
+	  a img{border:none;}
+ 	  #html5{position:fixed;right:0;top:10px;margin:10px 5px;}
+   </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Rubik's Cube <span>by <a href="http://weibo.com/tigerlihao" target="_blank">@tigerlihao</a></span></h1>
+      <canvas id="canvas" width="800" height="500">你out了，还在用不支持HTML5标准的古董浏览器！快换成ie9、firefox 7、chrome或者opera吧！</canvas>
+	  <script type="text/javascript">init();</script>
+      <div id="tips">Tips:在魔方上拖拽可以旋转选中的层，在其它地方拖拽可以旋转整个魔方，快试试看吧！<button onclick="randomize(10)">随机转十次</button></div>
+   </div>
+	<div id="html5">
+	  <a href="http://www.w3.org/html/logo/">
+<img src="html5-badge-v-css3-graphics.png" width="38" height="138" alt="HTML5 Powered with CSS3 / Styling, and Graphics, 3D &amp; Effects" title="HTML5 Powered with CSS3 / Styling, and Graphics, 3D &amp; Effects">
+</a></div>
+  </body>
+</html>
